@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Results summary component</title>
+		<link rel="stylesheet" href="./css/output.css" />
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 0.6875rem;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<main
+			class="flex flex-col md:flex-row rounded-xl bg-white h-full md:w-xl md:h-auto md:shadow-xl"
+		>
+			<!-- header -->
+			<div
+				class="flex flex-col justify-center items-center rounded-b-2xl md:rounded-2xl w-full p-4 space-y-6 bg-linear-to-b from-light-slate-blue to-light-royal-blue flex-1"
+			>
+				<p class="text-pale-blue">Your Result</p>
+
+				<!-- circle -->
+				<div
+					class="flex flex-col justify-center items-center bg-linear-to-t from-persian-blue to-violet-blue w-45 h-45 rounded-full"
+				>
+					<h1 class="text-5xl text-white font-extrabold mb-4">76</h1>
+					<p class="text-sm text-pale-blue">of 100</p>
+				</div>
+
+				<div class="space-y-2 text-center">
+					<h3 class="text-white font-bold text-lg">Great</h3>
+					<p class="text-sm text-pale-blue max-w-70">
+						You scored higher than 65% of the people who have taken these tests.
+					</p>
+				</div>
+			</div>
+
+			<!-- results -->
+			<div class="bg-white p-4 flex-1 md:rounded-2xl">
+				<h3 class="text-dark-gray-blue font-bold text-lg mb-4">Summary</h3>
+
+				<div id="results" class="space-y-4"></div>
+
+				<button
+					class="w-full py-2 text-center rounded-2xl bg-dark-gray-blue mt-4 text-white"
+				>
+					Continue
+				</button>
+			</div>
+		</main>
+
+		<footer class="attribution mt-4">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+			Coded by <a href="#">Dikoy</a>.
+		</footer>
+
+		<script src="./script/script.js"></script>
+	</body>
+</html>
