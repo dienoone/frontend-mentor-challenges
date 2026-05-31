@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@font-face {
+	font-family: 'Inter';
+	src: url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf')
+		format('truetype');
+	font-weight: 400 600 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@theme {
+	--font-inter: 'Inter', sans-serif;
+
+	--color-green: hsl(75, 94%, 57%);
+	--color-white: hsl(0, 0%, 100%);
+	--color-grey-700: hsl(0, 0%, 20%);
+	--color-grey-800: hsl(0, 0%, 12%);
+	--color-grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+	@apply text-sm font-inter flex flex-col items-center justify-center h-screen p-8 bg-grey-900;
+}
+
+.social-button {
+	@apply text-xs text-center py-2.5 bg-grey-700 rounded-lg text-white font-bold hover:bg-green hover:text-grey-900 transition duration-150;
+}
