@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import 'tailwindcss';
+
+@theme {
+	--font-outfit: 'Outfit', sans-serif;
+
+	--breakpoint-desktop: 1440px;
+
+	--color-white: hsl(0, 0%, 100%);
+	--color-slate-300: hsl(212, 45%, 89%);
+	--color-slate-500: hsl(216, 15%, 48%);
+	--color-slate-900: hsl(218, 44%, 22%);
+}
+
+body {
+	@apply min-h-screen flex flex-col gap-8 items-center justify-center bg-slate-300 p-8 h-screen;
+	font-family: 'Outfit', sans-serif;
+	font-size: 15px;
+}
